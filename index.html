@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
+<title>JSdbGUI-Plant_1.0.1.DB</title>
+ <script src="src/p5SimY/p5.js"></script>
+  <script src="src/p5SimY/p5.dom.min.js"></script>
+  <script src="src/p5SimY/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="src/p5SimY/style.css">
+<script src="src/svgS/php.js"></script>
+ <script src="src/seenJS/lib/seen.min.js"></script>
+ <script src="src/seenJs/seen.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.7.1/coffee-script.min.js"></script>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+
+  <link rel="stylesheet" type="text/css" href="src/p5SimY/style.css">
+
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -10,23 +23,25 @@
 }
 
 body {
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+   font-color: green;	
 }
 
 /* Style the header */
 .header {
-  background-color: white ;/* #ff2a7fbf; */
-  padding: 2px;
-    text-align: center;
-  font-size: 25px;
+  background-color: black;
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  frameBorder: 0px;
 }
 
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
-  height: 300px;  Should be removed. Only for demonstration */
-}
+  padding: 1px;
+ }
 
 /* Left and right column */
 .column.side {
@@ -59,19 +74,21 @@ body {
 }
 
 a:link, a:visited {
-  background-color: white;
+  background-color: #008CBA;
   color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
+  border: 2px solid white;
+  padding: 2px 5px;
   text-decoration: none;
   display: inline-block;
-  width:50%;	  
+  width:8%;
+  font-size: 16px;
+  text-align:center;
 }
 
 a:hover, a:active {
-  background-color: green;
-  color: white;
+  background-color: #e7e7e7;
+  color: darkgreen;
+  font-size: 16px;
 }
 .img2 {
   position: absolute;
@@ -100,7 +117,7 @@ div.desc {
   text-align: center;
 }
 
-/* The expanding image container */	
+/* The expanding image container */
 .container {
   position: relative;
   display: none;
@@ -112,13 +129,59 @@ div.desc {
   top: 10px;
   right: 15px;
   color: white;
-  font-size: 35px;
+  font-size: 32px;
   cursor: pointer;
 }
-.button2 {background-color: #008CBA;border-radius: 12px;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button5 {background-color: #555555;} /* Black */
+.buttonM {
+  background-color: #008CBA;
+  color: black;
+  border: 2px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:5%;
+  font-size: 16px;
+  text-align:center;
+}
+.button2 {background-color: #008CBA; padding: 2px 5px; border-radius: 12px;} /* Blue */
+.button3 {background-color: #f44336; padding: 2px 5px; border-radius: 12px;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black; padding: 2px 5px;} /* Gray */ 
+.button5 {background-color: #555555; padding: 2px 5px;} /* Black */
+.button6 {background-color: #008CBA;
+   color: black;
+   border: 2px solid white;
+   padding: 2px 5px;
+   text-decoration: none;
+  /*display: inline-block;*/
+   width:5%;
+   font-size: 16px;
+   text-align:center;}
+.button7 {background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 5px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 12px;}	  
+
+
+.storyTeller {
+  background-color: #008CBA;
+  color: lime;
+  border: 2px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:100%;
+  font-size: 12px;
+  text-align:left;
+}
+
+
 </style>
 </head>
 <script>
@@ -142,75 +205,143 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
-
-function c1() {
-  var link1 = "outThere1Com.js"
-	  document.getElementById("mySidebar").text = link1;
+	function w4_open() {
+  document.getElementById("myfiles").style.display = "block";
 }
+
+function w4_close() {
+  document.getElementById("myfiles").style.display = "none";
+}
+
+
 </script>
 
 <body>
 
-<h3>JSdbGUI-Plant_1.0.1.DB</h3>
-<input type="text" id="myText5" class="storyTeller" rows="43" cols="150" style="background-color:none;color:orange;" onkeypress="teRex3()"> 
-<div class="w3-teal" style="opacity: 0.3;onhover=opacity:1">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">open: DB_screen</button>
-  <a href="amZonk02.hta" style="border-radius: 12px; padding: 2px 5px;width: 60px" target="iframe_a">writeLinks</a>
+<h2><img src="source/introHeaderG.png"  style="width:23%" onclick="myFunction(this);" <div class="w3-teal">
+  <button class="buttonM button7" onclick="w3_open()">?</button>
+ 
+  <button onclick="w3_close()" class="buttonM button2">close &times;</button>
+<a class="buttonM button6;" href="source/courtesy.png" style="border-radius: 12px;" target="_self">courtesy</a>
+	<a class="buttonM button6;" href="indexRun.html" style="border-radius: 12px;color: #d800c4" target="_self">enlarge</a>  
+	
+  </div></h2>
 
-  <a href="amZonk02.hta" style="border-radius: 12px; padding: 2px 5px;width: 60px" target="iframe_a">writeDB</a>
+<script src="src/p5SimY/openProces3.js"> </script>
+<div class="row">
+ <div class="column middle" style="background-color:none;">
+	 
+ <a href="src/textS/workingExam1.html" style="border-radius: 12px;" target="iframe_a">lib</a>          
+ <a href="src/textS/story01.html" style="border-radius: 12px;"  target="iframe_a">story</a>  
+ <a href="src/textS/explain3dRaPlotter.html" style="border-radius: 12px;"  target="iframe_a">explain</a>  
 
-  <a href="amZonk02.hta" style="border-radius: 12px; padding: 2px 5px;width: 30px" target="iframe_a">what tb??</a>
-  <!-- a href="amZonk02.hta" style="border-radius: 12px; padding: 2px 5px;width: 40px" target="iframe_a">TB2</a-->
-  <a href="handsome2.html" style="border-radius: 12px; padding: 2px 5px;width: 30px" target="iframe_a" >Excel</a>
-  <a href="file://http://127.0.0.1:8081" style="border-radius: 12px; padding: 2px 5px;width: 60px" target="iframe_a">server</a>
-  <a href="plotCOMPAKTshort.html"  style="width: 20px;" target="iframe_a">open DB ORANGE </a>
-  <a href="bootDB1.txt"  style="width: 20px;" onclick="c1()" target="iframe_a">likns (regex)</a>
-<a href="outThere01Com.js" style="width: 20px;" class="button2" target="iframe_a">DB           </a>
+ <a href="src/svgS/svgDisplayRefresh.html" style="border-radius: 12px;" target="iframe_a">refresh</a>  
+ <a href="src/svgS/a2_3_5_Cell.svg" style="border-radius: 12px;" target="iframe_b">Cell</a>  
+ <a href="src/textS/workingExam1.html" style="border-radius: 12px;" target="iframe_c">examples</a>  
+	
+  <script src="src/seenJS/StackBlur.js"> </script>
+	<a href="src/p5SimY/perl.html" style="border-radius: 12px;" target="iframe_a">3Dptc</a>
+	<a href="src/textS/story2.html" style="border-radius: 12px;" target="iframe_a">plots</a>  
+	<a href="src/textS/workingExam1Experiment3.html" style="border-radius: 12px;" target="iframe_b">P(A)</a> 
+	<a href="src/HtmlS/catalogue.html" style="border-radius: 12px;" target="iframe_a">catalogue</a> 
+	
+<img src="source/ptc8label.png" style="width:5%" alt="[[93.72586872586874,94.02573529411764,93.92523364485982]]" onclick="myFunction(this);">  
+<img src="source/ptc7label.png" style="width:5%" alt="[93.72586872586874,94.02573529411764,3.03030303030303],[93.72586872586874,4.212860310421286,93.92523364485982],
+[3.683035714285714,94.02573529411764,93.92523364485982]" onclick="myFunction(this);">
+          <img src="source/ptc6label.png"  style="width:5%" onclick="myFunction(this);">
+          <img src="source/ptc5label.png"  style="width:5%" onclick="myFunction(this);">
+          <img src="source/ptc4label.png"  style="width:5%" onclick="myFunction(this);">
+          <img src="source/ptc3label.png"  style="width:5%" onclick="myFunction(this);">
+          <img src="source/ptc2label.png" style="width:5%" onclick="myFunction(this);">
+          <img src="source/ilabel.png" style="width:5%" onclick="myFunction(this);">
+        </div>
+ 
+                   
+</div>
 
-<a href="bootDB1.txt" style="width: 20px;" target="iframe_a">Summary</a>
-<a href="summary2.txt" style="width: 20px;" target="iframe_a">Summary</a>
-
- <button onClick="RunExe2(this);">openHaskell</button></p> </div>
-
-  
-
-
-
-  </div>
 
 <div class="header" name="oben">
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-      <iframe src="file://http://127.0.0.1:8081" name="iframe_a" style="border: none;" width="60%" height="400px"></iframe>
-   <iframe src="handsome2.html" name="iframe_b" style="border: none;" width="33%" height="400px"></iframe>
-<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:block,border:none;" id="mySidebar">
+	    
+   <iframe src="src/zooSvg.svg" name="iframe_a" style="border:none;background:#d1d00f6;frameBorder:0;" width="300px" height="550px"></iframe>
+   <iframe src="src/svgS/workExperiment3.svg" name="iframe_b" style="border:none;background:#d1d00f6;frameBorder:0;" width="300px" height="550px"></iframe>
 </div>	
  
   <h2></h2>	
   </div>
 
 
-<div class="row" style="height: 100px">
- 	  
-	  <div class="column middle" id="fronev" style="background-color:white;">
-	 
-          <img src="JavaScriptDB/explainJS_MAIN_STRUCTURE.png" text="this annd that" style="width:10%" onclick="myFunction(this);">
-          <img src="JavaScriptDB/newplot.png" style="width:10%" onclick="myFunction(this);">
-           <img src="henne54.png" style="width:10%" onclick="myFunction(this);">
-          <img src="henne55.png" style="width:10%" onclick="myFunction(this);">
+<div class="row">
+  <div class="column middle" style="background-color:none;">
+	  
+	  <a class="buttonM button6" href="source/2_3_5_1.png" target="iframe_b">&nbsp;&nbsp;</a>
+         <a class="buttonM button5" href="src/p5SimY/basic0.html" target="iframe_b">&nbsp;&nbsp;</a>
+         <a class="buttonM button5" href="src/p5SimY/action.html" target="iframe_b">&nbsp;&nbsp;</a>
+	 <a href="src/svgS/svgDisplayRefresh2.svg" target="iframe_b">plot:_The_world_is_everything</a> 
+ 
 
+  </div>  
+ </div> 
+		  <!--"  file:///H:/Logini17/Neuer%20Ordner/BackBoneOldFiles/Testbutton.html" -->
+
+<div class="row">  
+  <div class="column middle" style="background-color:none;">
+	 
+         <img src="source/liblabel.png" name="lib_b"  alt="daZip A" style="width:10%" onclick="myFunction(this);">
+    	 <img src="source/ptc9label.png" style="width:10%"alt="=>(1.167*10^5*%i+2.772*10^5)^(1/3)+(4.489*10^3)/(1.167*10^5*%i+2.772*10^5)^(1/3)+69.18"
+                   onclick="myFunction(this);">
 	   
-  </div>
-  <div id="rechtT" class="column side" style="height:300px; width:30%">
+          <img src="source/ptc8label.png" style="width:10%" alt="[[93.72586872586874,94.02573529411764,93.92523364485982]]" onclick="myFunction(this);">  
+          <img src="source/ptc7label.png" style="width:10%" alt="ptc7" onclick="myFunction(this);">
+          <img src="source/ptc6label.png" style="width:10%" onclick="myFunction(this);">
+          <img src="source/ptc5label.png" style="width:10%" onclick="myFunction(this);">
+          <img src="source/ptc4label.png" style="width:10%" onclick="myFunction(this);">
+          <img src="source/ptc3label.png" style="width:10%" onclick="myFunction(this);">
+          <img src="source/ptc2label.png" style="width:10%" onclick="myFunction(this);">
+          <img src="source/ilabel.png" style="width:10%" onclick="myFunction(this);">
+        </div>
+  <div class="column side" style="height:50px; width:100%">
          
-        <div class="container" style="height:300px; width:30%">
+        <div class="container" style="height:50px; width:100%">
 
           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           <img id="expandedImg">
-	  
-         <div id="imgtext"></div>
+	  <p> <textarea name="message" class="storyTeller" rows="20" cols="20">
+               set to ptc4 
+               a glimpse at one underlaying geometry to write this 2_3_5_Writer
+               observations during configuring: 
+</textarea>
+<br><br>
+</p>
+	           <div id="imgtext"></div>
 </div>        
                    
+</div>
+
+<img src="source/introHeader.png"  style="width:5%" onclick="myFunction(this);">
+<div class="row">
+ <div class="column middle" style="background-color:none;">
+
+ <button class="buttonM button7" onclick="w4_open()">file system</button>
+<a onclick="w4_close()" class="buttonM button2;">&times;</a> 
+ 
+<a href="src/textS/indat23720/filesystemS.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">1</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem2.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">2</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem3.html"style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">3</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem4.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">4</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem5.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">5</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem6.html"style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">6</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem7.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">7</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem8.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">8</a>
+<a href="src/textS/indat23720/filesystemDATA/filesystem9.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">9</a>
+
+ </div>
+
+ <div class="w3-sidebar w3-bar-block w3-border-right"  id="myfiles">
+
+ <iframe src="src/textS/workingExam1Experiment3.html" name="iframe_c" style="border:none;background:#d1d00f6;" width="100%" height="550px"></iframe>
+ </div>
+ 
 </div>
 
 
