@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>file-system</title>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.dom.min.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.sound.min.js"></script>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/svgS/php.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/style.css">
+
+    <meta http-equiv="refresh" content="30" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+   font-color: green;	
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  frameBorder: 0px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 1px;
+ }
+
+/* Left and right column */
+.column.side {
+  }
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+a:link, a:visited {
+  background-color: #008CBA;
+  color: black;
+  border: 2px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:5%;
+  font-size: 16px;
+  text-align:left;
+}
+
+a:hover, a:active {
+  background-color: #e7e7e7;
+  color: darkgreen;
+  font-size: 16px;
+}
+.img2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+	  
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+	.buttonM {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;border-radius: 12px;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+       .storyTeller {
+  background-color: #1e1c1ecc;
+  color: lime;
+  border: 0px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:100%;
+  font-size: 12px;
+  text-align:left;
+}
+
+</style>
+</head>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function RunExe2(){
+    var shell2 = new ActiveXObject("WScript.Shell");
+    var path2 = '"http://127.0.0.1:8023"';
+    shell2.run(path2,1,false);
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<body>
+<div class="row">
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+<a href="file:///c:/stack/SimilaritYWriter20/src/textS/indat23720/filesystem.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">back</a>
+<textarea name="message" class="storyTeller" rows ="43" cols="150">
+
+
+ <p>
+<a href="pfeil" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a">runKBASE</a>
+[["27.79874213836478","19.92337164750958","19.92337164750958","1.3745704467353952","1.5325670498084292","0.9487666034155599"],["28.30188679245283","26.666666666666664","26.666666666666664","10.309278350515463","10.452961672473867","54.45920303605313"],["34.339622641509436","27.177700348432055","27.177700348432055","2.0618556701030926","53.30739299610895","7.5438596491228065"],["69.81132075471697","42.58373205741627","42.58373205741627","58.76288659793814","9.824561403508772","8.188153310104529"]]
+
+[["69.81132075471697","27.79874213836478","28.30188679245283","34.339622641509436"],["42.58373205741627","27.177700348432055","26.666666666666664","19.92337164750958"],["42.58373205741627","27.177700348432055","26.666666666666664","19.92337164750958"],["58.76288659793814","1.3745704467353952","2.0618556701030926","10.309278350515463"],["53.30739299610895","10.452961672473867","9.824561403508772","1.5325670498084292"],["54.45920303605313","8.188153310104529","7.5438596491228065","0.9487666034155599"],["27.79874213836478","19.92337164750958","19.92337164750958","1.3745704467353952","1.5325670498084292","0.9487666034155599"]]
+
+wrote one line
+<q>
+
+[["A","A6060","A==0=","N"],["N=0==0=","N=0000","N000","N000=","N"],["N=0==0=","N=0===1","N=1","N=1=1","N=100","N"],["N000","N=1=1","N=1","N"],["N0000","N000","N0606","N000=","N"],["N00=0","N0=00=","N0=0000","N100100","N"]]
+
+[["A","A6060","A==0=","N"],["N=0==0=","N=0000","N000","N000=","N"],["N=0==0=","N=0===1","N=1","N=1=1","N=100","N"],["N000","N=1=1","N=1","N"],["N0000","N000","N0606","N000=","N"],["N00=0","N0=00=","N0=0000","N100100","N"],["A","N","N","N","N","N"]]
+
+wrote one line
+<r>
+
+<q>
+
+ 
+</textarea>
+<br><br>
+ </div>
+
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+<a href="pfeil" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a">runKBASE</a>
+<textarea id="steno" class="storyTeller" rows="43" cols="150">
+	<p>
+
+StepI  1/4
+
+inner Haskell  'Colored_2_3_5_Counter20.hs'
+ and          'The AtoBPlotter'
+  
+              PhiMax
+	 is a sorting algorythm that uses the Simival function 
+	 that as I suspect , far after I worked with it
+	 is 
+	 a point symetric 2 dimensional 'absolute'function 
+
+	 or 
+         
+	   a point symetric 2 dimensional 'absolute' sigmoid
+
+
+	   |                          x
+	   |               x      
+	   |          x    
+	   |       x
+	   |    x
+	   |  x
+	   |x_____________________
+           |
+	
+StepI  2/4
+
+in 'Colored_2_3_5_Counter20.hs'
+ and          'The AtoBPlotter'
+  
+capabiities of 'runKBASE`
+
+
+
+ offOn: Int, if==1 then run 'kArmTest5'
+ target : Int if==! thne ...
+ plot: Int , if==1 then writefile.wxm
+ addGH: Int ,if==! thne run 'kArmTrack5' -- without ghCheck
+ ghAff: String, add a string to a bonelist e.g "AAA"
+ n:Int ; io (n) in 'KArmt..
+ d: [[String]]  or a [bonelist]
+ get1: Int compare get1 to get1++get2
+ get2: Int compare get2 to get1++get2
+ get3: Int compare get3 to get3++get4
+ get4: Int compare get4 to get3++get4
+
+
+
+runKBASE offOn target plot addGH ghAdd n d get1 get2 get3 get4
+
+
+*>run
+
+
+*>let li=["AAABB","AAABAB","AAA","BBBAA"]
+
+
+*>let pi = Punkt "M" Nothing Nothing Nothing Nothing Nothing
+
+
+*>let myTest at = runKBase 2 [1,2] 12 at 2 li3 1 2 3 4
+
+
+</textarea>
+<br><br>
+ </div>
+
+
+ </div>
+ 
+</body></html>

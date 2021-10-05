@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>List for Step IV</title>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.dom.min.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.sound.min.js"></script>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/svgS/php.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/style.css">
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+   font-color: green;	
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  frameBorder: 0px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 1px;
+ }
+
+/* Left and right column */
+.column.side {
+  }
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+a:link, a:visited {
+  background-color: #008CBA;
+  color: black;
+  border: 2px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:5%;
+  font-size: 16px;
+  text-align:left;
+}
+
+a:hover, a:active {
+  background-color: #e7e7e7;
+  color: darkgreen;
+  font-size: 16px;
+}
+.img2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+	  
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+	.buttonM {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;border-radius: 12px;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+       .storyTeller {
+  background-color: #1e1c1ecc;
+  color: lime;
+  border: 0px solid white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: inline-block;
+  width:100%;
+  font-size: 12px;
+  text-align:left;
+}
+
+</style>
+</head>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function RunExe2(){
+    var shell2 = new ActiveXObject("WScript.Shell");
+    var path2 = '"http://127.0.0.1:8023"';
+    shell2.run(path2,1,false);
+
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<body>
+
+<div class="row">
+
+
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+<a href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/svgS/svgDisplayRefresh.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a"> > </a>
+<a href="file:///c:/stack/SimilaritYWriter20/src/textS/story3.html" style="border-radius: 12px;" target="iframe_a"> next </a>
+<textarea name="message" class="storyTeller" rows="43" cols="50">
+	<p>
+SimilaritY 'crawler'
+a glimpse at one underlying geometry to write this 2_3_5_Writer
+observations during configuring:  </p>
+	<p>
+
+	the formula 
+	--------------------------------------------------------------------------
+-- Gaussian influenced - Aehnlichkeitswarscheinlichkeit
+--- this function rates the similarity of two
+-- Lists vergleicht Aehnlichkeit und gibt 
+-- die Prozentzahl der einer stelle 
+-- der beiden listen aus
+--
+foaehnli1 a b = (a-b)
+foaehnli2 a b = (b-a)
+--umrechnen in percent mit a bigger b und b bigger a  
+aehnlichF a b = let a1 = if a greater b then ((foaehnli1 a b)/ (a/100) )
+                         else if a smaller b then  ((foaehnli2 a b)/ (b/100) )
+                         else 0
+                in let b1 g h = ((g) / ((h)/100)) 
+                in a1 
+
+ 
+similaritYvalue li la = let a = la -- z.b. [11,12,34,44]
+                        in let b = li 
+                        in let c1 w = sum w
+                        in let c2 = c1 a--length
+                        in let c3 = c1 b--length
+                        in  aehnlichF c2 c3 
+	
+
+
+	THere are four lines of thought
+
+        I.   simivals in [String]
+       
+        II.  data 'Punkt' type
+
+        III. plotting
+
+	 IV. build 2 3 5 Counter 
+
+</textarea>
+<br><br>
+ </div>
+ </div>
+ 
+</body></html>
