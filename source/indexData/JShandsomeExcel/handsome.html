@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@latest/dist/handsontable.full.min.css">
+	<link rel="stylesheet" type="text/css" href="https://handsontable.com/static/css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/handsontable@latest/dist/handsontable.full.min.js"></script>
+<script src="outThere01Com.js"></script>
+</head>
+
+<body>
+	<div id="hot"></div>
+	<script>
+                var kaba = new Object(obJ0);
+		var dataObject = [{
+			id: 1,
+			currency: 'Euro'
+		}, {
+			id: 2,
+			currency: (kaba.flist1)
+		}];
+		var hotElement = document.querySelector('#hot');
+		var hotElementContainer = hotElement.parentNode;
+		var hotSettings = {
+			data: dataObject,
+			columns: [{
+				data: 'id',
+				type: 'numeric',
+				width: 40
+			}, {
+				data: 'currency',
+				type: 'text'
+			}],
+			rowHeaders: true,
+			colHeaders: [
+				'ID',
+				'Currency'
+			]
+		};
+		var hot = new Handsontable(hotElement, hotSettings);
+	</script>
+</body>
+
+</html>

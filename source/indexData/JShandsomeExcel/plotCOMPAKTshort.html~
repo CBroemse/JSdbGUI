@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>plotCOMPAKT_01</title>
+ <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+ <script src='https://api.cryptonator.com/api/ticker/btc-usd'></script>
+      <meta http-equiv="refresh" content="300" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="short.css">
+
+</head>
+<script src="outThere01Com.js"> </script>
+<script>
+// -----------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------  END show DB -  boot DB ...
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function RunExe2(){
+    var shell2 = new ActiveXObject("WScript.Shell");
+    var path2 = '"http://127.0.0.1:8023"';
+    shell2.run(path2,1,false);
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="short1.js">
+
+</script>
+<body>
+<div class="row">
+	 
+<div class="column middle" name="odey" style="background-color:none;color:#000080ff;">
+       <a href="handsome2.html" style="border-radius: 12px; padding: 2px 5px;" target="zoe">EXCEL</a>
+	
+<textarea id="zoe" name="message" class="storyTeller" rows ="5" cols="150">
+I.                                                                     	
+  
+</textarea>
+<br><br>
+<!-- <input type="text" id="fname" size="40" onkeypress="myFunction2(event)" onkeyup="myReg(myFunction2(event))"> -->
+
+<p id="demo"></p>
+
+<script>
+/* In this example, we use a cross-browser solution, because the keyCode property does not work on the onkeypress event in Firefox. However, the which property does.
+       
+// save input from COMMAND LINE 
+// takes a whole String from first to last of ocurring 
+// 'event.which' || 'event.kexCode'
+function inputLINE() {
+  var x = document.getElementById("fname").value;
+  document.getElementById("demo").innerHTML = x;
+}
+/* general case n ->  'n' -> ','++n(',')  
+   a gobal 'whitespace' search
+    /\s/g;                  */
+
+
+
+</script>
+
+<div>
+<input type="text" id="myText2" class="storyTeller" rows="43" cols="150" style="background-color:none;color:white;" onkeypress="myRegg()">
+	 
+<p id="hemi"></p>
+
+<script>
+
+
+    
+function geT(){
+    var workThu = Number(find((tgAr[0]), tgAr));
+    document.getElementById("hemi").innerHTML = "  positions: "+ workThu + "    length:" + thu.length;
+    };
+
+
+function myRegg() {
+  var writeRg = document.getElementById("myText2").value;
+  var aRg = new RegExp ("("+writeRg+")", "g");
+  var patt1 = /(BTC|green)/g;
+  var prepZoe = JSON.stringify(thu2Ar);
+  var result = thu2.match(aRg);
+  var geTs = (find(writeRg, thu2Ar));
+                     		 
+
+  document.getElementById("hemi").innerHTML = "<p>"+ (result)+ "</p><p \n>  posi: "+geTs+"EXPLAIN  length:" + thu.length + "         of \'thu2\': ["+ thu2+"]</p>";
+   document.getElementById("zoe").innerHTML = "<p>"+ (result)+ "</p><p \n>  posi: "+geTs+"  length:" + thu.length + "         of \'thu2\': ["+ thu2+"]</p>";
+
+  };
+
+</script>
+ </div>
+  <!--                                                                                           Snd command Line: hemi2 is myText3 -->
+  <div>
+<input type="text" id="myText3" class="storyTeller" rows="43" cols="150" style="background-color:none;color:white;" onkeypress="myRegRule()">
+	 
+<p id="hemi2"></p>
+
+<script>
+
+
+function myRegRule() {
+ /*  var sorter = if (mek == "1"){  // if 1 then take value above
+	  return "myText2" }
+               else 	if (mek == "2"){
+		       return "myText3 }
+	       else {
+	               return "demo"}  */
+
+  var writeRg = document.getElementById("myText2").value;
+  var aRg = new RegExp ("("+writeRg+")", "g");
+  var patt1 = /(BTC|green)/g;
+  var prepZoe = JSON.stringify(zoe);
+  var result = thu2.match(aRg);
+  var geTs = (find(writeRg, thu2Ar));
+  //var backAr = paragraph.thu2Ar;
+    document.getElementById("hemi2").innerHTML = (""+geTs +"     " +geTs.length);
+  };
+
+</script>
+ </div>
+ <!--                                                                                                end snd command lin e -->
+  <!--                                                                                           3rd command Line: hemi3 is myText4 -->
+  <div>
+<input type="text" id="myText4" class="storyTeller" rows="43" cols="150" style="background-color:none;color:white;" onkeypress="teRex()">
+	 
+<p id="hemi3">tb4</p>
+
+<script>
+function myFunction6() {                       //                                              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -------------------$ hemi 3
+  var x = document.getElementById("myText4").value;
+  document.getElementById("hemi3").innerHTML = x;
+}
+
+function teRex() {
+  var writeRg = document.getElementById("myText4").value;
+  var aRg = new RegExp ("("+writeRg+")", "g");
+  var patt1 = /(BTC|green)/g;
+  var result = liStr.match(aRg);
+ // var result = thu2.match(aRg);
+  var geTs = (find(writeRg, liM2));
+                     		 
+
+  document.getElementById("hemi2").innerHTML = "<p>"+ (result)+ "</p><p \n>  posi: "+geTs+"  length:" + liStr.length + "         of \'liStr\': ["+ liStr+"]</p>";
+
+  };
+</script>
+ </div>
+ <!--                                                                                                end 3rd command lin e -->
+  <!--                                                                                           4th command Line: hemi4 is myText5 -->
+  <div>
+<input type="text" id="myText5" class="storyTeller" rows="43" cols="150" style="background-color:none;color:red;" onkeypress="teRex3()"> 
+	 
+<p id="hemi4"></p>
+
+<script src="plotterStdAlne01.js"> 
+</script>
+ </div>
+ <!--                                                                                                end 4th command lin e -->
+
+ </div>
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>  <!-- ################4444$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ THE PLOTTER -->
+
+<!-- <a href="file:///c:/stack/SimilaritYWriter20/src/textS/indat23720/otterWORK.svg" target="steno">library           </a> -->
+</div>
+
+<div class="column middle" name="odey" style="background-color:none;color:lime;">
+	<div class="storyTeller">
+
+<textarea id="steno" class="storyTeller" rows="43" cols="150">
+      
+    tb4*>  GET 1 flist1 CAT 1 dataStr11 2 MAX DATA PLOT fl or datFU or str 
+    < this html depends on>
+      outThere01Com.js
+      short1.js
+      plotterStdAlne01.js    
+</textarea>
+<br><br>
+ </div>
+
+
+ </div>
+
+<a href="amZonk02.hta" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">Amazon</a>
+<a href="winALLINPUT2.bat" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">View</a>
+<a href="handsome2.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">Hansome</a> 
+
+<a href="otto.hta" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">Otto</a> 
+</body></html>
