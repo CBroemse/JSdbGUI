@@ -136,7 +136,7 @@ div.desc {
   background-color: #008CBA;
   color: #61E986;
   border: 2px solid white;
-  padding: 2px 5px;
+  padding: 7px 5px;
   text-decoration: none;
   display: inline-block;
   width:5%;
@@ -148,8 +148,7 @@ div.desc {
 .button4 {background-color: #e7e7e7; color: black; padding: 2px 5px;} /* Gray */ 
 .button5 {background-color: #555555; padding: 2px 5px;} /* Black */
 .button6 {background-color: #021C1E;
-   border-radius: 12px;
-   color: #d800c4; 
+   color: #021C1E;
    border: 2px solid white;
    padding: 2px 5px;
    text-decoration: none;
@@ -222,25 +221,25 @@ function w4_close() {
 <h2><img src="source/haskell-logo2.svg"  style="width:13%" onclick="myFunction(this);" <div class="w3-teal">
  
   <button onclick="w3_open()" class="buttonM button2">open &times;</button>
-<a class="buttonM button6;" href="source/courtesy.png" target="_self">libray</a>
+<a class="buttonM button6;" href="source/courtesy.png" style="background-color:#021C1E;border-radius: 12px;color: #d800c4" target="_self">libray</a>
 	
 	
   </div></h2>
 
-<script src="src/p5SimY/openProces3.js"> </script>
 <div class="row">
  <div class="column middle" style="background-color:none;">
 	 
- <a href="source/plotCOMPAKTshort.html" style="border-radius: 12px;" target="iframe_a">open: DB_screen</a>          
- <a href="src/textS/story01.html" style="border-radius: 12px;"  target="iframe_a">KAAnsatz DB</a>  
- <a href="#folders" style="border-radius: 12px;">DB folders</a>  
+ <a href="source/plotCOMPAKTshort.html" style="background-color:#021C1E;border-radius: 12px;color: #FB5642;padding: 2px 5px;" target="iframe_a">plot CELL</a>          
+ <a href="src/textS/story01.html" class="buttonM" style="background-color:#021C1E;border-radius: 12px;color: #003B56;padding: 12px 2px;"   target="iframe_a">simul. DB</a>  
+ <a href="#folders" style="background-color:#021C1E;border-radius: 12px;color: #003B56;padding: 2px 5px;
+" >folder DB</a>  
 
- <a href="src/svgS/svgDisplayRefresh.html" style="border-radius: 12px;" target="iframe_a">Plan of action</a>  
- <a href="source/outThere01Com.js" style="border-radius: 12px;" target="iframe_b">cell/stream</a>  
+ <a href="src/svgS/svgDisplayRefresh.html" style="background-color:#021C1E;border-radius: 12px;color: #66A5AD;border-color: #003B56;padding: 2px 5px;"  target="iframe_a">Action</a>  
+ <a href="source/outThere01Com.js" style="background-color:#021C1E;border-radius: 12px;color: #66A5AD;border-color: #003B56;padding: 2px 5px;" target="iframe_b">CELL</a>  
 	
-	<a href="src/p5SimY/perl.htmil" style="border-radius: 12px;" target="iframe_a">write</a>
-	<a href="src/textS/story2.html" style="border-radius: 12px;" target="iframe_a">2_3_5 visiual</a>  
-	<a href="src/textS/workingExam1Experiment3.html" style="border-radius: 12px;" target="iframe_b">P(A)</a> 
+	<a href="src/p5SimY/perl.htmil" style="background-color:#021C1E;border-radius: 12px;color: #003B56;border-color: #003B56"  target="iframe_a">write</a>
+	<a href="src/textS/story2.html" style="background-color:#021C1E;border-radius: 12px;color: #003B56;border-color: #003B56"  target="iframe_a">2_3_5</a>  
+	<a href="src/textS/workingExam1Experiment3.html"style="background-color:#021C1E;border-radius: 12px;color: #61E986;border-color: #003B56" target="iframe_b">P(A)</a> 
           <img src="source/ilabel.png" style="width:5%" onclick="myFunction(this);">
         </div>
  
@@ -258,9 +257,21 @@ function w4_close() {
  
   <!--                                                               JSdbCtrl haskell or node switches -->
   </div>
-<div class="row">  
+<div class="row">
+
+	<div class="column side" style="background-color:none;">
+		<div class="w3-sidebar w3-bar-block w3-border-right"  id="myfiles">
+                <a onclick="w4_close()" class="buttonM button2;">&times;</a> 
+
+		<text style="color:white;">batch architecture<br> 
+		USERPROFILE<br>data<br>operators<br>statistics
+		 </text>
+		</div>
+          </div>
   <div class="column middle" style="background-color:none;">
 	  <iframe id="folders" src="file:///C:/JSdbSTREAMall/USERPROFILEprojects/JSdbCtrl.svg" scrolling="no" name="iframe_0" height="250" width="350"    style="border:none;background:#d1d00f6;frameBorder:0;"></iframe>
+	  	<button class="buttonM button7" onclick="w4_open()">explain</button>
+
 	  <!--                                                   PlugIn                          JSdbCtrl.svg -->
 
   </div>
@@ -286,33 +297,6 @@ function w4_close() {
 </div>        
                    
 </div>
-
-<img src="source/introHeader.png"  style="width:5%" onclick="myFunction(this);">
-<div class="row">
- <div class="column middle" style="background-color:none;">
-
- <button class="buttonM button7" onclick="w4_open()">file system</button>
-<a onclick="w4_close()" class="buttonM button2;">&times;</a> 
- 
-<a href="src/textS/indat23720/filesystem.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">1</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem2.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">2</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem3.html"style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">3</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem4.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">4</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem5.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">5</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem6.html"style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">6</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem7.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">7</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem8.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">8</a>
-<a href="src/textS/indat23720/filesystemDATA/filesystem9.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_c">9</a>
-
- </div>
-
- <div class="w3-sidebar w3-bar-block w3-border-right"  id="myfiles">
-
- <iframe src="src/textS/workingExam1Experiment3.html" name="iframe_c" style="border:none;background:#d1d00f6;" width="100%" height="550px"></iframe>
- </div>
- 
-</div>
-
 
 
 
