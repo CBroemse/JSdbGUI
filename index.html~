@@ -148,7 +148,8 @@ div.desc {
 .button4 {background-color: #e7e7e7; color: black; padding: 2px 5px;} /* Gray */ 
 .button5 {background-color: #555555; padding: 2px 5px;} /* Black */
 .button6 {background-color: #021C1E;
-   color: #021C1E;
+   border-radius: 12px;
+   color: #d800c4; 
    border: 2px solid white;
    padding: 2px 5px;
    text-decoration: none;
@@ -221,7 +222,7 @@ function w4_close() {
 <h2><img src="source/haskell-logo2.svg"  style="width:13%" onclick="myFunction(this);" <div class="w3-teal">
  
   <button onclick="w3_open()" class="buttonM button2">open &times;</button>
-<a class="buttonM button6;" href="source/courtesy.png" style="background-color:#021C1E;border-radius: 12px;color: #d800c4" target="_self">libray</a>
+<a class="buttonM button6;" href="source/courtesy.png" target="_self">libray</a>
 	
 	
   </div></h2>
