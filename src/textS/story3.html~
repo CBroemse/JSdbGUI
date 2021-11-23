@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 <title>List for Step IV</title>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.dom.min.js"></script>
+  <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/p5.sound.min.js"></script>
+ <script src="file:///c:/stack/SimilaritYWriter20/src/p5SimY/svgS/php.js"></script>
+
   <link rel="stylesheet" type="text/css" href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/style.css">
 
     <meta charset="utf-8">

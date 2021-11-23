@@ -351,13 +351,9 @@ function w50_close() {
 
           </div>
 	  <div class="dropdown">
-  <button class="dropbtn">run</button>
+  <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
-    <a href="#">Link 1 <div class="dropdown-content">
-		     <a href="#">Link 3</a>
-  </div>
-
-                       </a>
+    <a href="#">Link 1</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>

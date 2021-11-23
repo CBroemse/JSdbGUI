@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>List for Step IV</title>
+<title>Links</title>
+ 
   <link rel="stylesheet" type="text/css" href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/style.css">
 
     <meta charset="utf-8">
@@ -182,87 +183,64 @@ function w3_close() {
 
 <div class="column middle" name="odey" style="background-color:none;color:lime;">
 <div class="column middle" name="odey" style="background-color:none;color:lime;">
-<a href="#steno" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a">morphStage</a>
+<a href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/svgS/svgDisplayRefresh.html" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a"> > </a>
+<a href="file:///c:/stack/SimilaritYWriter20/src/textS/story3.html" style="border-radius: 12px;" target="iframe_a"> next </a>
 <textarea name="message" class="storyTeller" rows="43" cols="50">
 	<p>
-StepI 
+ALL LINKS
+the files used between
 
-inner Haskell  'Colored_2_3_5_Counter20.hs'
- and          'The AtoBPlotter'
-  
-              PhiMax
-	 is a sorting agorythm that uses the Simival function 
-	 that as I suspect , far after I worked with it
-	 is ( I hope Mr. Hohmann will be happy this statement:) 
+JSdbGUI
+JSdbSTREAMall
+KAAnsatz21
 
-	 a point-axial symetric 2 dimensional 'absulute'function 
+display:
+c:/JSdbSTREAMall/JSdbCtrl.svg
 
-	 or 
-         
-	   a point-axial symetric 2 dimensional 'absulute' sigmoid
-
-
-	   |                          x
-	   |               x      
-	   |          x    
-	   |       x
-	   |    x
-	   |  x
-	   |x_____________________
-           |
-             
-
-</textarea>
-<br><br>
- </div>
-
-<div class="column middle" name="odey" style="background-color:none;color:lime;">
-<a href="pfeil" style="border-radius: 12px; padding: 2px 5px;" target="iframe_a">runKBASE</a>
-<textarea id="steno" class="storyTeller" rows="43" cols="50">
+bat files:
+	</p>
 	<p>
-StepI  2/4
 
-in 'Colored_2_3_5_Counter20.hs'
- and          'The AtoBPlotter'
-  
-capabiities of 'runKBASE`
+	the formula 
+	--------------------------------------------------------------------------
+-- Gaussian influenced - Aehnlichkeitswarscheinlichkeit
+--- this function rates the similarity of two
+-- Lists vergleicht Aehnlichkeit und gibt 
+-- die Prozentzahl der einer stelle 
+-- der beiden listen aus
+--
+foaehnli1 a b = (a-b)
+foaehnli2 a b = (b-a)
+--umrechnen in percent mit a bigger b und b bigger a  
+aehnlichF a b = let a1 = if a greater b then ((foaehnli1 a b)/ (a/100) )
+                         else if a smaller b then  ((foaehnli2 a b)/ (b/100) )
+                         else 0
+                in let b1 g h = ((g) / ((h)/100)) 
+                in a1 
 
-
-
- offOn: Int, if==1 then run 'kArmTest5'
- target : Int if==! thne ...
- plot: Int , if==1 then writefile.wxm
- addGH: Int ,if==! thne run 'kArmTrack5' -- without ghCheck
- ghAff: String, add a string to a bonelist e.g "AAA"
- n:Int ; io (n) in 'KArmt..
- d: [[String]]  or a [bonelist]
- get1: Int compare get1 to get1++get2
- get2: Int compare get2 to get1++get2
- get3: Int compare get3 to get3++get4
- get4: Int compare get4 to get3++get4
-
-
-
-runKBASE offOn target plot addGH ghAdd n d get1 get2 get3 get4
-
-
-*>run
-
-
-*>let li=["AAABB","AAABAB","AAA","BBBAA"]
+ 
+similaritYvalue li la = let a = la -- z.b. [11,12,34,44]
+                        in let b = li 
+                        in let c1 w = sum w
+                        in let c2 = c1 a--length
+                        in let c3 = c1 b--length
+                        in  aehnlichF c2 c3 
+	
 
 
-*>let pi = Punkt "M" Nothing Nothing Nothing Nothing Nothing
+	THere are four lines of thought
 
+        I.   simivals in [String]
+       
+        II.  data 'Punkt' type
 
-*>let myTest at = runKBase 2 [1,2] 12 at 2 li3 1 2 3 4
+        III. plotting
 
+	 IV. build 2 3 5 Counter 
 
 </textarea>
 <br><br>
  </div>
-
-
  </div>
  
 </body></html>
