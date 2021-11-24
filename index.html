@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JSdbGUI-Plant_1.0.1.DB</title>
- <script src="src/p5SimY/p5.js"></script>
-  <script src="src/p5SimY/p5.dom.min.js"></script>
-  <script src="src/p5SimY/p5.sound.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="src/p5SimY/style.css">
-<script src="src/svgS/php.js"></script>
- <script src="src/seenJS/lib/seen.min.js"></script>
- <script src="src/seenJs/seen.js"></script>
+<title>JSdbGUI-Plant_2.0.2.DB</title>
  <script src="http://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.7.1/coffee-script.min.js"></script>
 <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 
@@ -19,7 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- COLORSCEME
 	background-color: #021C1E;
-	red =  --> 
+	red =   #FB5642 
+        green = #61E986;
+--> 
 <style>
 * {
   box-sizing: border-box;
@@ -196,65 +191,44 @@ div.desc {
   align-content:center;
   overflow:auto;
 }
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
+.dropbtn {
+  background-color: #04AA6D;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+   right:0px;
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.buttonM:hover {background-color: #3e8e41;}
+
+
 </style>
 </head>
 <script>
@@ -365,28 +339,28 @@ function w50_close() {
 		USERPROFILE<br>data<br>operators<br>statistics
 		 </text>
 		</div>
-		<div class="w3-sidebar w3-bar-block border-right"  id="myfiles55">
+  <div class="w3-sidebar w3-bar-block border-right"  id="myfiles55">
                 <a onclick="w50_close()" class="buttonM button2">&times;</a> 
 
 		<text style="color:white;"><br> 
 		run stack-exe</text><br>
-		<a href="src/textS/Links.html" class="sidebutton" target="iframe_0">run_batch_file</a><br>
-		
-		<br>operators<br>statistics
-		 </text>
+		</text>
+		<a href="src/textS/Links.html" style="border:none;background-color:#021C1E;color: #FB5642" target="iframe_0">run_batch_file</a><br>
+		<a href="src/textS/Links.html" style="border:none;" target="iframe_0">operaqtors</a><br>
+		 <a href="src/textS/Links.html" style="border:none;" target="iframe_0">statistics</a><br>
+
 		</div>
 
           </div>
-	  <div class="navbar">
 	  <div class="dropdown">
-	    <button class="dropbtn" style="border-radius: 12px;">run</button>  <!--                                        THE RUN BUTTON-->
-               <div class="dropdown-contenti"style="background-color:#021C1E;border-radius: 12px;color: #d800c4" >
-    <a href="#" style="background-color:#021C1E;border-radius: 12px;color: #d800c4">haskell </a>
-    <a href="#" class="sidebotton" >capstone</a>
-    <a href="#">via this GUI</a>
+		  
+		  <button class="dropbtn" style="border-radius: 12px;">run</button>  <!--                                        THE RUN BUTTON-->
+               <div class="dropdown-content"style="background-color:#021C1E;border-radius: 12px;color: #d800c4" >
+    <a href="#" style="background-color:#021C1E;border-radius: 12px;color: #d800c4">haskell</a>
+    <a href="#" class="sidebotton" style="background-color:#021C1E;border-radius: 12px;color: #d800c4">capstone JS</a>
+    <a href="#"  style="background-color:#021C1E;border-radius: 12px;color: #FB5642">via this GUI</a>
   </div>
-	  </div></div>
-	    <div class="column middle" style="background-color:none;">
+  <div class="column middle" style="background-color:none;">
 	  <iframe id="folders" src="file:///C:/JSdbSTREAMall/USERPROFILEprojects/JSdbCtrl.svg" scrolling="no" name="iframe_0" height="450" width="350"    style="border:none;background:#d1d00f6;frameBorder:0;color:red"></iframe>
 	  	<button class="buttonM button7" onclick="w4_open()">explain</button>
 
