@@ -3,7 +3,9 @@
 <head>
 <title>Links</title>
  
-<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="file:///c:/stack/SimilaritYWriter20/src/p5SimY/style.css">
+
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -186,14 +188,7 @@ function w3_close() {
 </a>
 <a href="message2" class="buttonM" target="iframe_a"> next </a>
 <textarea name="message" class="storyTeller" rows="33" cols="50">
-a. boot basic arcitecture from `PunktDataType`
-   download from git to drive then add to 
-   stack.yaml of package
-"   packages:
- - .
- - c:/PunktDataType
-                   "
-b. Capstone - data objects in javascript
+Capstone - data objects in javascript
 ---------------------------------------------
 one approach that feeds the haskell output
    I. mainly text files
