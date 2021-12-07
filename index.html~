@@ -291,7 +291,7 @@ function w50_close() {
  <a href="c:/KAAnsatz21/ConceptRecover11-21.svg" style="background-color:#021C1E;border-radius: 12px;color: #66A5AD;border-color: #003B56;padding: 2px 5px;"  target="iframe_a">Action</a>  
  <a href="source/outThere01Com.js" style="background-color:#021C1E;border-radius: 12px;color: #66A5AD;border-color: #003B56;padding: 2px 5px;" target="iframe_b">CELL</a>  
 	
-	<a href="file:///../JSdbGUI/src/textS/CapstoneConcept.svg" style="background-color:#021C1E;border-radius: 12px;color: #003B56;border-color: #003B56"  target="iframe_a">write</a>
+	<a href="../JSdbGUI/src/textS/CapstoneConcept.svg" style="background-color:#021C1E;border-radius: 12px;color: #003B56;border-color: #003B56"  target="iframe_a">write</a>
 	<a href="src/textS/story2.html" style="background-color:#021C1E;border-radius: 12px;color: #003B56;border-color: #003B56"  target="iframe_a">2_3_5</a>  
 	<a href="src/textS/workingExam1Experiment3.html"style="background-color:#021C1E;border-radius: 12px;color: #61E986;border-color: #003B56" target="iframe_b">P(A)</a> 
           <img src="source/ilabel.png" style="width:5%" onclick="myFunction(this);">

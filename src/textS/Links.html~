@@ -188,19 +188,11 @@ function w3_close() {
 <a href="file:///c:/stack/SimilaritYWriter20/src/textS/story3.html" class="buttonM" target="iframe_a"> next </a>
 <textarea name="message" class="storyTeller" rows="33" cols="50">
 ALL LINKS
-files used 
+files used between
 
 JSdbGUI
 JSdbSTREAMall
-PunktDataType - data types*
 KAAnsatz21
-
-datatypes:
-most basic in PunktDataType/Main.hs
--- function: select two lists of muliple [String]
-             called foas :: [[String]] 
-motherType foas r = (map (mayer2 ((ausw r (foas)))) ([[foas]]))
--- function: select two lists of muliple [String]
 
 display:
 c:/JSdbSTREAMall/JSdbCtrl.svg
